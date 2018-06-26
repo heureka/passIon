@@ -197,7 +197,7 @@ body {
   margin: 5%;
 }
 
-#fork-on-github a {
+.fork-on-github a {
   background: #fff;
   color: #000;
   text-decoration: none;
@@ -211,12 +211,12 @@ body {
   transition: 0.5s;
 }
 
-#fork-on-github a:hover {
+.fork-on-github a:hover {
   background: #f6ff00;
   color: #000;
 }
 
-#fork-on-github a::before, #fork-on-github a::after {
+.fork-on-github a::before, .fork-on-github a::after {
   content: "";
   width: 100%;
   display: block;
@@ -226,13 +226,13 @@ body {
   height: 1px;
 }
 
-#fork-on-github a::after {
+.fork-on-github a::after {
   bottom: 1px;
   top: auto;
 }
 
 @media screen and (min-width: 800px) {
-  #fork-on-github {
+  .fork-on-github {
     position: fixed;
     display: block;
     top: 0;
@@ -243,7 +243,7 @@ body {
     z-index: 9999;
   }
 
-  #fork-on-github a {
+  .fork-on-github a {
     width: 200px;
     position: absolute;
     top: 30px;
