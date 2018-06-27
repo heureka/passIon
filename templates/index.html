@@ -24,7 +24,9 @@
     <div id="rollup-inner" class="hidden">
       {% include '_howto.html' %}
     </div>
-    <a id="btn-rollup" class="btn">How it works</a>
+    <a id="btn-how-it-works" class="btn-rollup btn">How it works</a>
+    <a class="btn-rollup btn" href="https://github.com/heureka/passIon">Fork me on GitHub</a>
+    <a class="btn-rollup btn" href="https://twitter.com/heurekadevs">Created by @HeurekaDevs</a>
   </div>
 {% endblock %}
 
@@ -35,7 +37,7 @@
     $('btn-submit').addEventListener("click", doTranslation);
 
     $('container').addEventListener("click", hideRollup);
-    $('btn-rollup').addEventListener("click", toggleRollup);
+    $('btn-how-it-works').addEventListener("click", toggleRollup);
     $('link-rollup').addEventListener("click", toggleRollup);
 
     $('btn-copy').addEventListener("click", copyToClipboard);
