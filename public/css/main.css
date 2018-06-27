@@ -165,13 +165,17 @@ body {
   margin-bottom: 9px;
 }
 
-.btn-rollup {
+.btn-stick-top {
   background: #0E2037;
   margin-top: -1px;
   margin-right: -2px;
   border-radius: 0 0 3px 3px;
   border-top: none;
   font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+   .btn-stick-top { display: none }
 }
 
 #container {
