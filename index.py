@@ -22,7 +22,6 @@ r = redis.StrictRedis(
     password=config.REDIS_PASSWORD
 )
 
-
 @app.route('/set', methods=['post'])
 def set_pass():
     assert request.method == 'POST'
@@ -98,4 +97,4 @@ if __name__ == '__main__':
     except AttributeError:
         host = '127.0.0.1'
 
-    app.run(host=host, port=port)
+    app.run(host=host, port=port, debug=config.DEBUG)

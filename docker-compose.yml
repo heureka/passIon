@@ -1,0 +1,28 @@
+version: '3'
+services:
+  main:
+    build: .
+    restart: always
+    ports:
+      - 5000:5000
+    networks:
+      - internal
+      - public
+    depends_on:
+      - redis
+    environment:
+      - TTL=86400
+  redis:
+    image: redis:latest
+    restart: always
+    networks:
+      - internal
+    volumes:
+      - redis-persistent-data:/data
+
+volumes:
+  redis-persistent-data:
+
+networks:
+  internal:
+  public:
